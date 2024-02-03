@@ -21,7 +21,7 @@ ROOT_DIR=$( dirname -- "$( readlink -f -- "$0"; )"; )
 echo $ROOT_DIR
 
 model_name_or_path="pretrained_model_name_or_path"
-DATA_ARGS="--data_path /Users/shiluyou/Desktop/prepare/sft/data_config.json"
+DATA_ARGS="--data_path data_config.json"
 output_dir="checkpoint"
 
 torchrun $DISTRIBUTED_ARGS \
