@@ -1,0 +1,7 @@
+[
+    {
+        "path": "data_dir",
+        "data_name": "use_for_sft",
+        "sample_ratio": 1
+    }
+]
