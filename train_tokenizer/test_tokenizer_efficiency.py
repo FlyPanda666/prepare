@@ -2,6 +2,8 @@ import pandas as pd
 from tqdm import tqdm
 from transformers import LlamaTokenizer
 
+# https://github.com/yangjianxin1/LLMPruner
+# 如果我们重新从头开始训练，那么使用起来比较容易，但是如果我们是把两个模型进行合并的，在初始化的时候想让原来的token使用pretrain阶段的结果，而没有的token重新初始化，可以参考上面的项目做法。
 
 def cal_lens():
     tokenizer = LlamaTokenizer.from_pretrained("merged_tokenizer_hf_40k")
